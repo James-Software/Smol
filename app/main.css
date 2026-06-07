@@ -5,7 +5,10 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 ::selection {
-  background-color: #ededed;
+  background-color: oklch(37.129% 0.09571 51.798);
+  color: #b06f4c;
 }
