@@ -8,7 +8,7 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-::selection {
+h1::selection {
   background-color: oklch(37.129% 0.09571 51.798);
   color: #b06f4c;
 }
