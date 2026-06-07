@@ -19,3 +19,48 @@
     --foreground: #ededed;
   }
 }
+
+/* Sonner toast customization */
+.sonner-toaster {
+  --toaster-bg: #0a0a0a;
+  --toaster-border: #333333;
+  --toaster-text: oklch(66.6% 0.179 58.318);
+}
+
+.sonner-toast {
+  background-color: #0a0a0a;
+  border: 1px solid #ffffff;
+  color: #ededed;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.sonner-toast[data-type="success"] {
+  background-color: #1a1a1a;
+  border-color: #ffffff;
+}
+
+.sonner-toast[data-type="success"] .sonner-toast-title {
+  color: #fbbf24;
+}
+
+.sonner-toast[data-type="success"] .sonner-toast-description {
+  color: #d97706;
+}
+
+.sonner-toast[data-type="error"] {
+  background-color: #1a1a1a;
+  border-left: 4px solid #ef4444;
+}
+
+.sonner-toast[data-type="error"] .sonner-toast-title {
+  color: #fca5a5;
+}
+
+.sonner-toast[data-type="info"] {
+  background-color: #1a1a1a;
+  border-left: 4px solid #3b82f6;
+}
+
+.sonner-toast[data-type="info"] .sonner-toast-title {
+  color: #93c5fd;
+}
