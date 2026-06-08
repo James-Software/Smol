@@ -9,10 +9,11 @@ export default function Home() {
 
   return (
     <>
-      {/* Container wrapper forces children to stack on top of each other */}
+      {/* Container forces the dissapearing div and the appearing div to stack on top of eachother */}
       <div className="grid grid-cols-1 grid-rows-1 place-items-center w-full">
         
-        {/* FIRST DIV */}
+        {/* DISSAPPEARS AFTER ENTERING A LINK */}
+
         <div className={`col-start-1 row-start-1 w-full flex flex-col items-center transition-all duration-300 ease-out ${
             isFading ? "opacity-0 pointer-events-none blur-xs" : "opacity-100 blur-none"
           }`}>
@@ -23,11 +24,12 @@ export default function Home() {
           }} />
         </div>
 
-        {/* SECOND DIV */}
+        {/* APPEARS AFTER ENTERING A LINK */}
+
         <div className={`col-start-1 row-start-1 w-full flex flex-col items-center transition-all duration-300 delay-300 ease-out ${
             isFading ? "opacity-100 blur-none" : "pointer-events-none opacity-0 blur-xs"
           }`}>
-          <h1 className="font-sans font-bold text-xl text-amber-600 pt-8">Your link is ready</h1>
+          <h1 className="font-sans font-bold text-4xl text-amber-600 pt-8">Your link is ready</h1>
         </div>
 
       </div>
