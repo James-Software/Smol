@@ -52,7 +52,8 @@ export default function Home() {
         <div className={`col-start-1 row-start-1 w-full flex flex-col items-center transition-all duration-300 delay-300 ease-out ${
             isFading ? "opacity-100 blur-none" : "pointer-events-none opacity-0 blur-xs"
           }`}>
-          <h1 className="font-sans font-bold text-4xl text-amber-600 pt-8">Your link is ready: {shortLink}</h1>
+          <h1 className="font-sans font-bold text-4xl text-amber-600 pt-8">Your link is ready</h1>
+          <h1 className="font-sans font-bold text-2xl text-amber-600 pt-16">www.urlsmol.vercel.app/{shortLink}</h1>
         </div>
 
       </div>
